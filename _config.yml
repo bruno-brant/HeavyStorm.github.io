@@ -18,10 +18,10 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Bruno Brant's Blog
+title: Bruno Brant's Bliki
 #email: 
 description: Just a bunch of unordered thoughts about tech, software, etc.
-baseurl: "/" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://blog.brunobrant.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: heavystorm
 github_username:  bruno-brant
