@@ -1,7 +1,7 @@
 # Setup
-title: Noir
-tagline: a dark mode friendly Jekyll theme
-url: https://noir.essentialenemy.com
+title: TECHNOLOGY MATTERS
+tagline: a bunch of unordered thoughts about tech, software, etc.
+url: "https://blog.brunobrant.net" # the base hostname & protocol for your site, e.g. http://example.com
 paginate: 1
 baseurl: ""
 permalink: :title/
@@ -37,11 +37,11 @@ sass:
 
 # Specify the author for blog posts
 author:
-  name: Victor Johnson
-  url: https://twitter.com/essentialenemy
+  name: Bruno Brant
+  url: https://twitter.com/heavystorm
   email: me@essentialenemy.com
 
 # Custom vars
-version: 1.3.0
+version: 1.0.0
 github:
-  repo: https://github.com/essentialenemy/noir
+  repo: https://github.com/bruno-brant/bruno-brant.github.io
