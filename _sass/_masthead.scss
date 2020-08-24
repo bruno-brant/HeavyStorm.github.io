@@ -32,11 +32,17 @@
   }
 }
 
+.masthead-title-main {
+  font-size: 120px;
+  font-weight: 800;
+}
+
 .navigation {
   display: block;
   font-size: 100%;
   font-weight: 500;
   color: $midnight-text-color;
+  border-bottom: 3px solid white;
   
 @media (prefers-color-scheme: dark) {
   color: $midnight-text-color-dark;
@@ -54,4 +60,11 @@ ul#navigation-list {
     padding-right: 12px;
 	margin: 0;
     }
+}
+
+.masthead-title a {
+  font-size: 80px;
+  font-variant: normal;
+  font-stretch: normal;
+  font-weight: 800;
 }
