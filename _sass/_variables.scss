@@ -1,5 +1,3 @@
-@import '_custom-colors.scss';
-
 // Color scheme for light and dark modes.
 
 $light: #ff0066;
@@ -20,7 +18,7 @@ $message-blue: #009ddc;
 $root-font-family: "proxima-nova-n7", "proxima-nova-n6", "proxima-nova", sans-serif;
 $code-font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 $root-font-size: 16px;
-$root-line-height: 1.5;
+$root-line-height: 1.0;//1.5;
 
 $body-color: rgba(0,0,0,.8);
 $body-bg: rgba(0,0,0,.03);

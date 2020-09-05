@@ -7,6 +7,7 @@
 // Alterations to CSS to make the design dark mode friendly by @essentialenemy.
 // View the repo at https://github.com/essentialenemy/noir
 
+@import "custom-colors";
 @import "variables";
 @import "base";
 @import "type";
@@ -18,3 +19,4 @@
 @import "pagination";
 @import "message";
 @import "buttons";
+@import "footer";

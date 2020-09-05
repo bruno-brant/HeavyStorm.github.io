@@ -3,7 +3,7 @@ title: TECHNOLOGY MATTERS
 tagline: a bunch of unordered thoughts about tech, software, etc.
 url: "https://blog.brunobrant.net" # the base hostname & protocol for your site, e.g. http://example.com
 paginate: 1
-baseurl: ""
+#baseurl: "https://blog.brunobrant.net"
 permalink: :title/
 
 kramdown:
@@ -39,7 +39,13 @@ sass:
 author:
   name: Bruno Brant
   url: https://twitter.com/heavystorm
-  email: me@essentialenemy.com
+  #email: heavy_storm@hotmail.com
+
+social_links:
+  github: bruno-brant
+  twitter: HeavyStorm
+  stackoverflow: "227332/bruno-brant"
+  linkedin: brunobrant
 
 # Custom vars
 version: 1.0.0
