@@ -15,7 +15,7 @@
   color: $midnight-text-color;
   position: relative;
   text-align: center;
-  padding-right: 12px;
+  //padding-right: 12px;
 
   @media (prefers-color-scheme: dark) {
     color: $midnight-text-color-dark;
@@ -23,16 +23,37 @@
 
   a {
     color: white;
-    font-size: 65px;
+    font-size: 1.4rem;
     font-variant: normal;
     font-stretch: normal;
     font-weight: 800;
   }
 
   small {
-    font-size: 75%;
+    font-size: 50%;
     font-weight: 400;
     opacity: 0.5;
+    line-height: normal;
+  }
+
+  @media only screen and (min-width: 480px) {
+    a {
+      font-size: 2rem;
+    }
+
+    small {
+      font-size: 65%;
+    }
+  }
+
+  @media only screen and (min-width: 900px) {
+    a {
+      font-size: 3rem;
+    }
+
+    small {
+      font-size: 75%;
+    }
   }
 }
 
@@ -75,7 +96,7 @@
       @media (prefers-color-scheme: dark) {
         color: $midnight-text-color-dark;
       }
-    
+
       &:focus,
       &:hover {
         color: $midnight-strong-accent-light;
