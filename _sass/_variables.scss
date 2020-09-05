@@ -1,3 +1,5 @@
+@import '_custom-colors.scss';
+
 // Color scheme for light and dark modes.
 
 $light: #ff0066;
@@ -31,11 +33,15 @@ $large-font-size: 20px;
 // Midnight color scheme
 
 $midnight-text-color: rgba(0,0,0,.8);
-$midnight-text-color-dark: hsla(0,0%,100%,.8);
+$midnight-text-color-dark: hsla(0,0%,100%,.9);
 $midnight-body-bg: #FFFFFF;
 $midnight-body-bg-dark: #000000;
+$midnight-weak-accent-light: rgb(131, 62, 165);
+$midnight-weak-accent-dark: $orange-dark;//rgba(10,132,255,1.0);
 $midnight-accent-light: rgba(191,90,242,1.0);
-$midnight-accent-dark: rgba(10,132,255,1.0);
+$midnight-accent-dark: $orange-light;//rgba(10,132,255,1.0);
+$midnight-strong-accent-light: rgba(191,90,242,1.0);
+$midnight-strong-accent-dark: $orange-lighter;//rgba(10,132,255,1.0);
 $midnight-code-light: rgba(191,90,242,1.0);
 $midnight-code-dark: rgba(10,132,255,1.0);
 $midnight-header-light: #838383;

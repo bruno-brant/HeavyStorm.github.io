@@ -3,7 +3,7 @@
 // The style of the site's title and optional secondary description.
 
 .masthead {
-  padding-top:    1rem;
+  padding-top: 1rem;
   padding-bottom: 1rem;
   margin-bottom: 3rem;
   text-align: center;
@@ -16,19 +16,23 @@
   position: relative;
   text-align: center;
   padding-right: 12px;
-  
-@media (prefers-color-scheme: dark) {
-  color: $midnight-text-color-dark;
+
+  @media (prefers-color-scheme: dark) {
+    color: $midnight-text-color-dark;
   }
 
   a {
     color: inherit;
+    font-size: 65px;
+    font-variant: normal;
+    font-stretch: normal;
+    font-weight: 800;
   }
 
   small {
     font-size: 75%;
     font-weight: 400;
-    opacity: .5;
+    opacity: 0.5;
   }
 }
 
@@ -40,31 +44,60 @@
 .navigation {
   display: block;
   font-size: 100%;
-  font-weight: 500;
+  font-weight: 700;
   color: $midnight-text-color;
   border-bottom: 3px solid white;
-  
-@media (prefers-color-scheme: dark) {
-  color: $midnight-text-color-dark;
+
+  @media (prefers-color-scheme: dark) {
+    color: $midnight-text-color-dark;
   }
-  
-ul#navigation-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+
+  ul#navigation-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
   }
+
   ul#navigation-list li {
     display: inline;
     list-style: none;
-	padding-left: 0;
+    padding-left: 0;
     padding-right: 12px;
-	margin: 0;
+    margin: 0;
+
+    color: $midnight-text-color;
+    @media (prefers-color-scheme: dark) {
+      color: $midnight-text-color-dark;
     }
+
+    a {
+      color: $midnight-text-color;
+      @media (prefers-color-scheme: dark) {
+        color: $midnight-text-color-dark;
+      }
+    
+      &:focus,
+      &:hover {
+        color: $midnight-strong-accent-light;
+        @media (prefers-color-scheme: dark) {
+          color: $midnight-strong-accent-dark;
+        }
+      }
+    }
+  }
 }
 
-.masthead-title a {
-  font-size: 80px;
-  font-variant: normal;
-  font-stretch: normal;
-  font-weight: 800;
-}
+// ul#navigation-list li a {
+//   color: $midnight-text-color;
+//   @media (prefers-color-scheme: dark) {
+//     color: $midnight-text-color-dark;
+//   }
+
+//   &:focus,
+//   &:hover {
+//     color: $midnight-strong-accent-light;
+//     @media (prefers-color-scheme: dark) {
+//       color: $midnight-strong-accent-dark;
+//     }
+//   }
+// }
