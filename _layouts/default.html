@@ -37,14 +37,23 @@ layout: compress
 
       <!-- Change navigation links here -->
       <div class="navigation">
-        <ul id="navigation-list">          
+        <ul id="navigation-list">
           <li {% if page.title == 'Home' %} class="active" {% endif %}><a href="/">HOME</a></li>
-          <li {% if page.title == 'Archive' %} class="active" {% endif %}><a href="/archive/" >POSTS</a></li>
+          <li {% if page.title == 'Archive' %} class="active" {% endif %}><a href="/archive/">POSTS</a></li>
           <li {% if page.title == 'Tags' %} class="active" {% endif %}><a href="/tags/">TAGS</a></li>
-          <li {% if page.title == 'Categories' %} class="active" {% endif %}><a href="/categories/" >CATEGORIES</a></li>
-          <li {% if page.title == 'About' %} class="active" {% endif %}><a href="/about/" >ABOUT</a></li>
+          <li {% if page.title == 'Categories' %} class="active" {% endif %}><a href="/categories/">CATEGORIES</a></li>
+          <li {% if page.title == 'About' %} class="active" {% endif %}><a href="/about/">ABOUT</a></li>
+          <li id="subscribe">
+            <a href="{{ 'feed.xml' | relative_url }}">
+              <p>SUBSCRIBE</p>
+              <svg class="svg-icon grey" style="fill: #f66a0a;">
+                <use xlink:href="{{ 'assets/minima-social-icons.svg#rss' | relative_url }}"></use>
+              </svg>
+            </a>
+          </li>
         </ul>
         <div style="float:right">
+
           <a href="javascript:void(0);" class="navigation-icon" onclick="openNavigation()">&#9776;</a>
         </div>
       </div>

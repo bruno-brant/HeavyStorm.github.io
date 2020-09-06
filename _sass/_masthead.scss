@@ -123,6 +123,13 @@
   display: none;
 }
 
+// hide the "subscribe" text when the display is large
+.navigation ul#navigation-list li#subscribe a {
+  p {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .navigation {
     text-align: left;
@@ -139,6 +146,13 @@
   .navigation a.navigation-icon {
     float: right;
     display: block;
+  }
+
+  // show the "subscribe" text when the display is large
+  .navigation ul#navigation-list li#subscribe a {
+    p {
+      display: inline;
+    }
   }
 
   // The "responsive" class is added to the navigation with JavaScript when the user clicks on the icon.
