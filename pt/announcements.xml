@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+ <title>TECHNOLOGY MATTERS</title>
+ <link href="https://blog.brunobrant.nethttps://blog.brunobrant.net/pt/announcements.xml" rel="self"/>
+ <link href="https://blog.brunobrant.nethttps://blog.brunobrant.net/pt/"/>
+ <updated>2020-12-07T17:52:27-03:00</updated>
+ <id>https://blog.brunobrant.net</id>
+ <author>
+   <name>Bruno Brant</name>
+   <email></email>
+ </author>
+
+ 
+ <entry>
+   <title>Feliz Halloween! Meu blog está de volta!</title>
+   <link href="https://blog.brunobrant.nethttps://blog.brunobrant.net/pt/happy-halloween-blog-is-back/"/>
+   <updated>2020-10-31T15:00:00-03:00</updated>
+   <id>https://blog.brunobrant.net/happy-halloween-blog-is-back</id>
+   <content type="html">&lt;p&gt;Esta é minha terceira ou quarta tentativa de criar um blog, e espero ter sucesso em mantê-lo atualizado. Pelo menos agora eu finalmente tenho o tempo de que preciso para criar novos &lt;em&gt;posts&lt;/em&gt; e continuar. Além disso, eu &lt;em&gt;adoro&lt;/em&gt;  GitHub Pages. É muito mais legal estar em uma plataforma que eu (meio que) controlo.&lt;/p&gt;
+
+&lt;p&gt;Como nas minhas tentativas anteriores, este blog será focado no desenvolvimento de software, mas desta vez posso postar outras coisas que não estão diretamente relacionadas a ele. Fique ligado nas atualizações!&lt;/p&gt;
+</content>
+ </entry>
+ 
+
+</feed>
