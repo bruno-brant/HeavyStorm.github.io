@@ -15,6 +15,7 @@ plugins:
   - jekyll-paginate
   - jekyll-seo-tag
   - jekyll-target-blank
+  - jekyll-multiple-languages-plugin
 
 # Optimize Jekyll
 exclude:
@@ -32,6 +33,11 @@ sass:
 
 # Options
 
+# Jekyll Multiple Languages Plugin
+languages: ["pt", "en"]
+exclude_from_localizations: ["javascript", "images", "css"]
+default_locale_in_subfolder: true
+
 # Replace this value and uncomment to enable Google Analytics tracking
 # ga_analytics: UA-000000-0
 
@@ -44,7 +50,7 @@ author:
 social_links:
   github: bruno-brant
   twitter: HeavyStorm
-  stackoverflow: "227332/bruno-brant"
+  stackoverflow: 227332/bruno-brant
   linkedin: brunobrant
 
 # Custom vars
