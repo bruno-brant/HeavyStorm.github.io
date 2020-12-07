@@ -1,0 +1,10 @@
+global:
+  language_switch: "read this site in:"
+  tagline: a bunch of unsorted thoughts about tech, software, etc.
+  navigation:
+    home: HOME
+    posts: POSTS
+    tags: TAGS
+    categories: CATEGORIES
+    about: ABOUT
+    subscribe: SUBSCRIBE

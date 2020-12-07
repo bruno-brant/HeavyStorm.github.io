@@ -32,20 +32,36 @@ layout: compress
 
       <h3 class="masthead-title">
         <a href="{{ site.baseurl }}/" title="Home" class="masthead-title-main">{{ site.title }}</a><br>
-        <small>{{ site.tagline }}</small>
+        <small>{% t global.tagline %}</small>
       </h3>
 
       <!-- Change navigation links here -->
+      {% if site.lang == site.default_lang %}
+	      {% assign prefix = site.baseurl_root %}
+      {% else %}
+	      {% assign prefix = site.baseurl_root | append: "/" | append: site.lang %}
+      {% endif %}
+
       <div class="navigation">
         <ul id="navigation-list">
-          <li {% if page.title == 'Home' %} class="active" {% endif %}><a href="/">HOME</a></li>
-          <li {% if page.title == 'Archive' %} class="active" {% endif %}><a href="/archive/">POSTS</a></li>
-          <li {% if page.title == 'Tags' %} class="active" {% endif %}><a href="/tags/">TAGS</a></li>
-          <li {% if page.title == 'Categories' %} class="active" {% endif %}><a href="/categories/">CATEGORIES</a></li>
-          <li {% if page.title == 'About' %} class="active" {% endif %}><a href="/about/">ABOUT</a></li>
+          <li {% if page.title.en == 'Home' %} class="active" {% endif %}>
+            <a href="{{prefix}}">HOME</a>
+          </li>
+          <li {% if page.title.en == 'Archive' %} class="active" {% endif %}>
+            <a href="{{prefix}}/archive/">POSTS</a>
+          </li>
+          <li {% if page.title.en == 'Tags' %} class="active" {% endif %}>
+            <a href="{{prefix}}/tags/">TAGS</a>
+          </li>
+          <li {% if page.title.en == 'Categories' %} class="active" {% endif %}>
+            <a href="{{prefix}}/categories/">{% t global.navigation.categories%}</a>
+          </li>
+          <li {% if page.title.en == 'About' %} class="active" {% endif %}>
+            <a href="{{prefix}}/about/">{% t global.navigation.about %}</a>
+          </li>
           <li id="subscribe">
             <a href="{{ 'feed.xml' | relative_url }}">
-              <p>SUBSCRIBE</p>
+              <p>{% t global.navigation.subscribe %}</p>
               <svg class="svg-icon grey" style="fill: #f66a0a;">
                 <use xlink:href="{{ 'assets/minima-social-icons.svg#rss' | relative_url }}"></use>
               </svg>
@@ -53,9 +69,15 @@ layout: compress
           </li>
         </ul>
         <div style="float:right">
-
           <a href="javascript:void(0);" class="navigation-icon" onclick="openNavigation()">&#9776;</a>
         </div>
+      </div>
+
+      <!-- Language selector -->
+      <div class="language-selector">
+        <span>{% t global.language_switch %}</span>
+        <a href="{{ site.baseurl_root }}{{ page.url}}"><span>🇺🇸</span></a> |
+        <a href="{{ site.baseurl_root }}/pt{{ page.url }}"><span>🇧🇷</span></a>
       </div>
 
     </header>

@@ -172,3 +172,14 @@
     text-align: left;
   }
 }
+
+.language-selector {
+  margin: 5px 3px;
+  float: right;
+  
+  color: #505050; font-size: smaller; font-style: italic;
+
+  a {
+    font-style: normal;
+  }
+}
