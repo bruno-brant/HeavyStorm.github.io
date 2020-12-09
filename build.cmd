@@ -1,0 +1,1 @@
+bundle exec jekyll build -d ..\bruno-brant.github.io\ -b https://blog.brunobrant.net

@@ -2,9 +2,9 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
  <title>TECHNOLOGY MATTERS</title>
- <link href="https://blog.brunobrant.nethttps://blog.brunobrant.net/announcements.xml" rel="self"/>
- <link href="https://blog.brunobrant.nethttps://blog.brunobrant.net/"/>
- <updated>2020-12-07T17:52:26-03:00</updated>
+ <link href="https://blog.brunobrant.net/announcements.xml" rel="self"/>
+ <link href="https://blog.brunobrant.net/"/>
+ <updated>2020-12-09T17:37:49+00:00</updated>
  <id>https://blog.brunobrant.net</id>
  <author>
    <name>Bruno Brant</name>
@@ -14,8 +14,8 @@
  
  <entry>
    <title>Happy Halloween! My blog is back!</title>
-   <link href="https://blog.brunobrant.nethttps://blog.brunobrant.net/happy-halloween-blog-is-back/"/>
-   <updated>2020-10-31T15:00:00-03:00</updated>
+   <link href="https://blog.brunobrant.net/happy-halloween-blog-is-back/"/>
+   <updated>2020-10-31T18:00:00+00:00</updated>
    <id>https://blog.brunobrant.net/happy-halloween-blog-is-back</id>
    <content type="html">&lt;p&gt;This is my third or fourth attempt to create a blog, and I do hope that I succeed in keeping it up-to-date. At least now I finally have the time I need to create new posts, and keep it going. Also, I &lt;em&gt;love&lt;/em&gt; GitHub pages. It’s much nicer to be in a platform that I (kinda) control.&lt;/p&gt;
 
