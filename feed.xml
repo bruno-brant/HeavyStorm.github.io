@@ -4,13 +4,25 @@
  <title>TECHNOLOGY MATTERS</title>
  <link href="https://blog.brunobrant.net/feed.xml" rel="self"/>
  <link href="https://blog.brunobrant.net/"/>
- <updated>2021-02-17T20:23:55+00:00</updated>
+ <updated>2021-02-17T20:40:37+00:00</updated>
  <id>https://blog.brunobrant.net/</id>
  <author>
    <name>Bruno Brant</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>Read my blog in portuguese or english!</title>
+   <link href="https://blog.brunobrant.net/read-my-blog-in-portuguese/"/>
+   <updated>2021-02-17T00:00:00+00:00</updated>
+   <id>https://blog.brunobrant.net/read-my-blog-in-portuguese</id>
+   <content type="html">
+     &lt;p&gt;After some effort, I managed to allow my blog to become multilingual. Now all posts are in Portuguese or English. Detailed readers will have noticed the icons that allow you to select the language:&lt;/p&gt;
+
+     <p><a href="https://blog.brunobrant.net/read-my-blog-in-portuguese/">Continue reading →</a></p>
+    </content>
+ </entry>
  
  <entry>
    <title>Parsing code with Sprache</title>

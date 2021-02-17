@@ -4,13 +4,29 @@
  <title>TECHNOLOGY MATTERS</title>
  <link href="https://blog.brunobrant.net/announcements.xml" rel="self"/>
  <link href="https://blog.brunobrant.net/"/>
- <updated>2021-02-17T20:23:55+00:00</updated>
+ <updated>2021-02-17T20:40:37+00:00</updated>
  <id>https://blog.brunobrant.net</id>
  <author>
    <name>Bruno Brant</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>Read my blog in portuguese or english!</title>
+   <link href="https://blog.brunobrant.net/read-my-blog-in-portuguese/"/>
+   <updated>2021-02-17T00:00:00+00:00</updated>
+   <id>https://blog.brunobrant.net/read-my-blog-in-portuguese</id>
+   <content type="html">&lt;p&gt;After some effort, I managed to allow my blog to become multilingual. Now all posts are in Portuguese or English. Detailed readers will have noticed the icons that allow you to select the language:&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img src=&quot;/assets/2021-02-17-read-my-blog-in-portuguese/multilanguage-buttons-full.png&quot; alt=&quot;Buttons with flags&quot; /&gt;
+  &lt;figcaption&gt;flags are used to select the language&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Click on the flag of your preferred language. In the coming weeks I will upload a change to save the user’s preferences.&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Happy Halloween! My blog is back!</title>

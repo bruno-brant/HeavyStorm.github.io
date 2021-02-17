@@ -4,7 +4,7 @@
  <title>TECHNOLOGY MATTERS</title>
  <link href="https://blog.brunobrant.net/pt/feed.xml" rel="self"/>
  <link href="https://blog.brunobrant.net/pt/"/>
- <updated>2021-02-17T20:23:55+00:00</updated>
+ <updated>2021-02-17T20:40:37+00:00</updated>
  <id>https://blog.brunobrant.net/</id>
  <author>
    <name>Bruno Brant</name>
@@ -13,9 +13,21 @@
 
  
  <entry>
-   <title>Parsing Code With Sprache</title>
+   <title>Leia meu blog em português ou inglês!</title>
+   <link href="https://blog.brunobrant.net/pt/read-my-blog-in-portuguese/"/>
+   <updated>2021-02-17T00:00:00+00:00</updated>
+   <id>https://blog.brunobrant.net/read-my-blog-in-portuguese</id>
+   <content type="html">
+     &lt;p&gt;Depois de algum esforço, consegui permitir que meu blog ficasse multilíngual. Agora todos os posts estão em português ou ingles. Leitores detalhistas já terão notado os ícones que permitem selecionar a língua:&lt;/p&gt;
+
+     <p><a href="https://blog.brunobrant.net/pt/read-my-blog-in-portuguese/">Continue reading →</a></p>
+    </content>
+ </entry>
+ 
+ <entry>
+   <title>Analisando código com Sprache</title>
    <link href="https://blog.brunobrant.net/pt/parsing-code-with-sprache/"/>
-   <updated>2021-02-13T00:00:00+00:00</updated>
+   <updated>2021-02-13T10:00:00+00:00</updated>
    <id>https://blog.brunobrant.net/parsing-code-with-sprache</id>
    <content type="html">
      &lt;p&gt;Você provavelmente sabe que às vezes (&lt;em&gt;muitas&lt;/em&gt; vezes), o trabalho de um desenvolvedor é muito mais pesquisa ou análise do que programação! No passado, houve muitos casos em que eu estava em um projeto em que meu objetivo era migrar ou reescrever software antigo e, durante esses compromissos, acabei criando ferramentas para me ajudar. Muitas dessas ferramentas eram analisadores de código especializados que realizavam automaticamente a análise que eu exigia ou até mesmo geravam códigos mais novos que eu poderia utilizar.&lt;/p&gt;

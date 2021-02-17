@@ -2,8 +2,17 @@
   
         
     <url>
+      <loc>https://blog.brunobrant.net/read-my-blog-in-portuguese/</loc>
+      <lastmod>2021-02-17T00:00:00+00:00</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.5</priority>
+    </url>
+    
+  
+        
+    <url>
       <loc>https://blog.brunobrant.net/parsing-code-with-sprache/</loc>
-      <lastmod>2021-02-13T00:00:00+00:00</lastmod>
+      <lastmod>2021-02-13T10:00:00+00:00</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
     </url>
@@ -23,7 +32,7 @@
   <url>
     <loc>https://blog.brunobrant.net/404.html</loc>
     
-      <lastmod>2021-02-17T20:23:55+00:00</lastmod>
+      <lastmod>2021-02-17T20:40:37+00:00</lastmod>
     
     <changefreq>weekly</changefreq>
     <priority>0.3</priority>
@@ -32,7 +41,7 @@
   <url>
     <loc>https://blog.brunobrant.net/about/</loc>
     
-      <lastmod>2021-02-17T20:23:55+00:00</lastmod>
+      <lastmod>2021-02-17T20:40:37+00:00</lastmod>
     
     <changefreq>weekly</changefreq>
     <priority>0.3</priority>
@@ -41,7 +50,7 @@
   <url>
     <loc>https://blog.brunobrant.net/announcements.xml</loc>
     
-      <lastmod>2021-02-17T20:23:55+00:00</lastmod>
+      <lastmod>2021-02-17T20:40:37+00:00</lastmod>
     
     <changefreq>weekly</changefreq>
     <priority>0.3</priority>
@@ -50,7 +59,7 @@
   <url>
     <loc>https://blog.brunobrant.net/archive/</loc>
     
-      <lastmod>2021-02-17T20:23:55+00:00</lastmod>
+      <lastmod>2021-02-17T20:40:37+00:00</lastmod>
     
     <changefreq>weekly</changefreq>
     <priority>0.3</priority>
@@ -59,7 +68,7 @@
   <url>
     <loc>https://blog.brunobrant.net/categories/</loc>
     
-      <lastmod>2021-02-17T20:23:55+00:00</lastmod>
+      <lastmod>2021-02-17T20:40:37+00:00</lastmod>
     
     <changefreq>weekly</changefreq>
     <priority>0.3</priority>
@@ -68,7 +77,7 @@
   <url>
     <loc>https://blog.brunobrant.net/feed.xml</loc>
     
-      <lastmod>2021-02-17T20:23:55+00:00</lastmod>
+      <lastmod>2021-02-17T20:40:37+00:00</lastmod>
     
     <changefreq>weekly</changefreq>
     <priority>0.3</priority>
@@ -77,7 +86,7 @@
   <url>
     <loc>https://blog.brunobrant.net/</loc>
     
-      <lastmod>2021-02-17T20:23:55+00:00</lastmod>
+      <lastmod>2021-02-17T20:40:37+00:00</lastmod>
     
     <changefreq>weekly</changefreq>
     <priority>0.3</priority>
@@ -86,16 +95,7 @@
   <url>
     <loc>https://blog.brunobrant.net/sitemap.xml</loc>
     
-      <lastmod>2021-02-17T20:23:55+00:00</lastmod>
-    
-    <changefreq>weekly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.brunobrant.net/styles/</loc>
-    
-      <lastmod>2021-02-17T20:23:55+00:00</lastmod>
+      <lastmod>2021-02-17T20:40:37+00:00</lastmod>
     
     <changefreq>weekly</changefreq>
     <priority>0.3</priority>
@@ -104,7 +104,7 @@
   <url>
     <loc>https://blog.brunobrant.net/styles.css</loc>
     
-      <lastmod>2021-02-17T20:23:55+00:00</lastmod>
+      <lastmod>2021-02-17T20:40:37+00:00</lastmod>
     
     <changefreq>weekly</changefreq>
     <priority>0.3</priority>
@@ -113,7 +113,7 @@
   <url>
     <loc>https://blog.brunobrant.net/tags/</loc>
     
-      <lastmod>2021-02-17T20:23:55+00:00</lastmod>
+      <lastmod>2021-02-17T20:40:37+00:00</lastmod>
     
     <changefreq>weekly</changefreq>
     <priority>0.3</priority>
