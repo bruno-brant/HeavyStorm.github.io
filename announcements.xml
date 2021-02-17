@@ -4,7 +4,7 @@
  <title>TECHNOLOGY MATTERS</title>
  <link href="https://blog.brunobrant.net/announcements.xml" rel="self"/>
  <link href="https://blog.brunobrant.net/"/>
- <updated>2021-02-17T21:20:17+00:00</updated>
+ <updated>2021-02-17T21:23:02+00:00</updated>
  <id>https://blog.brunobrant.net</id>
  <author>
    <name>Bruno Brant</name>
@@ -17,7 +17,7 @@
    <link href="https://blog.brunobrant.net/read-my-blog-in-portuguese/"/>
    <updated>2021-02-17T00:00:00+00:00</updated>
    <id>https://blog.brunobrant.net/read-my-blog-in-portuguese</id>
-   <content type="html">&lt;p&gt;After some effort, I managed to allow my blog to become multilingual. Now all posts are in Portuguese or English. Detailed readers will have noticed the icons that allow you to select the language:&lt;/p&gt;
+   <content type="html">&lt;p&gt;After some effort, I managed to allow my blog to become multilingual. Now all posts are in Portuguese or English. Avid readers (as if I had any!) will have noticed the icons that allow you to select the language:&lt;/p&gt;
 
 &lt;figure&gt;
   &lt;img src=&quot;/assets/2021-02-17-read-my-blog-in-portuguese/multilanguage-buttons-full.png&quot; alt=&quot;Buttons with flags&quot; /&gt;
