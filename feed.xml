@@ -4,7 +4,7 @@
  <title>TECHNOLOGY MATTERS</title>
  <link href="https://blog.brunobrant.net/feed.xml" rel="self"/>
  <link href="https://blog.brunobrant.net/"/>
- <updated>2021-03-14T22:24:13+00:00</updated>
+ <updated>2021-03-14T22:58:56+00:00</updated>
  <id>https://blog.brunobrant.net/</id>
  <author>
    <name>Bruno Brant</name>
@@ -97,7 +97,7 @@
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;IMPORT = &quot;import&quot;, PACKAGE_NAME, &quot;;&quot;;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;Let’s begin by updating our previous &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Import&lt;/code&gt; class. Change its name from &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Import&lt;/code&gt; to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ImportStatement&lt;/code&gt;, which is more exact. &lt;strong&gt;Use your IDE refactor tool to rename the class.&lt;/strong&gt; I’ve also created a constructor for it that initializes the PackageName:&lt;/p&gt;
+&lt;p&gt;Let’s begin by updating our previous &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Import&lt;/code&gt; class. Change its name from &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Import&lt;/code&gt; to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ImportStatement&lt;/code&gt;, which is more exact. &lt;strong&gt;Use your IDE refactor tool to rename the class.&lt;/strong&gt; I’ve also created a constructor for it that initializes the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;PackageName&lt;/code&gt;:&lt;/p&gt;
 
 &lt;div class=&quot;language-csharp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;ImportStatement&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
@@ -143,11 +143,11 @@
 
 &lt;p&gt;Avid readers will notice the previously-unseen-method &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Token()&lt;/code&gt; at the second line. This is one of the most useful methods in Sprache - it will remove whitespace around the character, but will &lt;em&gt;demand&lt;/em&gt; it to be there. This means that, for instance, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Parse.String(&quot;import&quot;).Token().Parse(&quot;   import    &quot;)&lt;/code&gt; will work, but &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Parse.String(&quot;import&quot;).Token().Parse(&quot;   importasd    &quot;)&lt;/code&gt; will not.&lt;/p&gt;
 
-&lt;p&gt;The rest should be very readable - look for the import keyword, then a PackageName structure, and returns a import statement. &lt;strong&gt;Run all tests.&lt;/strong&gt; You should get a 🟢.&lt;/p&gt;
+&lt;p&gt;The rest should be very readable - look for the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;import&lt;/code&gt; keyword, then a PackageName structure, and returns a import statement. &lt;strong&gt;Run all tests.&lt;/strong&gt; You should get a 🟢.&lt;/p&gt;
 
 &lt;p&gt;Moving on, let’s do a bit of refactor. Remember that I said we’d do something about &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;string.Join('.', actual.PackageName.Identifiers)&lt;/code&gt;? Now it’s the time!&lt;/p&gt;
 
-&lt;p&gt;The string representation of a package name, say, “android.content.ActivityNotFoundException” is none other than “android.content.ActivityNotFoundException”. So, what do you say we override PackageName.ToString to comply with that behavior?&lt;/p&gt;
+&lt;p&gt;The string representation of a package name, say, “android.content.ActivityNotFoundException” is none other than “android.content.ActivityNotFoundException”. So, what do you say we override &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;PackageName.ToString&lt;/code&gt; to comply with that behavior?&lt;/p&gt;
 
 &lt;div class=&quot;language-csharp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;PackageName&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
@@ -191,7 +191,7 @@
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;❗ &lt;strong&gt;Word of advice&lt;/strong&gt;: in this case the input is formatted exactly as the output of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ImportStatement.ToString&lt;/code&gt;. However, if you parse something like &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&quot;import    name.surname&quot;&lt;/code&gt;, while the parse will work, the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ToString&lt;/code&gt; will return &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&quot;import name.surname&quot;&lt;/code&gt;, without spaces. This means that the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Token()&lt;/code&gt; rule isn’t being tested in our suite - the reason for that being that it doesn’t appear in our scope - therefore, tests are a bit brittle and should be improved on most circunstances. I won’t do this during these exercises, but readers should definetely do it.&lt;/p&gt;
+  &lt;p&gt;⚠ &lt;strong&gt;Warning&lt;/strong&gt;: in this case the input is formatted exactly as the output of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ImportStatement.ToString&lt;/code&gt;. However, if you parse something like &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&quot;import    name.surname&quot;&lt;/code&gt;, while the parse will work, the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ToString&lt;/code&gt; will return &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&quot;import name.surname&quot;&lt;/code&gt;, without spaces. This means that the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Token()&lt;/code&gt; rule isn’t being tested in our suite - the reason for that being that it doesn’t appear in our scope - therefore, tests are a bit brittle and should be improved on most circunstances. I won’t do this during these exercises, but readers should definetely do it.&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;Now, we need a way to read a block of imports in our file. We have called it IMPORT_LIST in the eBNF. The data structure for it need be no more than &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;List&amp;lt;ImportStatement&amp;gt;&lt;/code&gt;, but we need a parser for it. Begin with a test:&lt;/p&gt;
@@ -401,6 +401,7 @@ public class AuthenticatorActivity extends TestableActivity
          │
 class declaration keyword
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
 &lt;p&gt;So we need to expand the EBNF:&lt;/p&gt;
 
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;CLASS_DECLARATION = VISIBILITY, &quot;class&quot;, IDENTIFIER, { &quot;extends&quot;, IDENTIFIER }, &quot;{&quot;, (* ommited *), &quot;}&quot;;
@@ -467,7 +468,7 @@ public class AuthenticatorActivity extends TestableActivity
 
 &lt;p&gt;Again, the tests deal only with what we’ve seen so far. I’ve used a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Fact&lt;/code&gt; instead of a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Theory&lt;/code&gt; because we are only dealing with a single case. Once we have more cases to test, I’ll convert it to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Theory&lt;/code&gt;.&lt;/p&gt;
 
-&lt;p&gt;Ah! I’m testing the result of the annotation parsing, which is actually repeating the tests already done in the AnnotationParserTests. We could do this a bit differently and just make sure that the correct parser was called, but for now, let’s keep this simple and repeat the test.&lt;/p&gt;
+&lt;p&gt;Ah! I’m testing the result of the annotation parsing, which is actually repeating the tests already done in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;AnnotationParserTests&lt;/code&gt;. We could do this a bit differently and just make sure that the correct parser was called, but for now, let’s keep this simple and repeat the test.&lt;/p&gt;
 
 &lt;p&gt;Now the implementation, albeit long, is simple, just parse each fragment we saw in the breakdown above:&lt;/p&gt;
 
