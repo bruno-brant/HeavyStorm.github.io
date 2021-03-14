@@ -4,7 +4,7 @@
  <title>TECHNOLOGY MATTERS</title>
  <link href="https://blog.brunobrant.net/feed.xml" rel="self"/>
  <link href="https://blog.brunobrant.net/"/>
- <updated>2021-03-14T23:44:13+00:00</updated>
+ <updated>2021-03-14T23:52:21+00:00</updated>
  <id>https://blog.brunobrant.net/</id>
  <author>
    <name>Bruno Brant</name>
@@ -56,6 +56,8 @@
 &lt;p&gt;You probably know that sometimes (&lt;em&gt;many&lt;/em&gt; times), a developer’s job is much more research or analysis than programming! In the past, there have been many instances where I was on a project where my goal was to migrate or rewrite old software, and during those engagements, I ended up creating tools to help me. Many of those tools were specialized code parsers that would automatically perform the analysis I required or even spit out newer code that I could reuse.&lt;/p&gt;
 
 &lt;p&gt;In all those cases, I needed to parse some structured code, and there’s a simple way of doing this: by using &lt;a href=&quot;https://github.com/sprache/Sprache&quot;&gt;Sprache&lt;/a&gt;, a parsing framework for dotnet. In this article, I’m going to teach you how to do that.&lt;/p&gt;
+
+&lt;!--more--&gt;
 
 &lt;h1 id=&quot;parsing-java-code&quot;&gt;Parsing Java code&lt;/h1&gt;
 
