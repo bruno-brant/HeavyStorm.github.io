@@ -4,7 +4,7 @@
  <title>TECHNOLOGY MATTERS</title>
  <link href="https://blog.brunobrant.net/pt/feed.xml" rel="self"/>
  <link href="https://blog.brunobrant.net/pt/"/>
- <updated>2021-03-14T23:52:22+00:00</updated>
+ <updated>2021-03-14T23:57:23+00:00</updated>
  <id>https://blog.brunobrant.net/</id>
  <author>
    <name>Bruno Brant</name>
@@ -19,7 +19,7 @@
    <id>https://blog.brunobrant.net/parsing-code-with-sprache-part-2</id>
    <content type="html">
      &lt;blockquote&gt;
-  &lt;p&gt;😎 Este é o segundo artigo de uma série de partes múltiplas sobre &lt;strong&gt;como analisar código com Sprache&lt;/strong&gt;. Você pode ler a primeira parte &lt;a href=&quot;2021-02-13-parsing-code-with-sprache&quot;&gt;aqui&lt;/a&gt;.&lt;/p&gt;
+  &lt;p&gt;😎 Este é o segundo artigo de uma série de múltiplas partes sobre &lt;strong&gt;como analisar código com Sprache&lt;/strong&gt;. Você pode ler a primeira parte &lt;a href=&quot;2021-02-13-parsing-code-with-sprache&quot;&gt;aqui&lt;/a&gt;.&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;No post anterior, vimos como analisar algum texto (em particular, código Java) usando &lt;a href=&quot;https://github.com/sprache/Sprache&quot;&gt;Sprache&lt;/a&gt;, uma poderosa biblioteca para C#. Vimos como usar uma abordagem incremental e como usar testes unitários para conduzir o desenvolvimento com esta ferramenta. Até agora, escrevemos um analisador para &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Identifier&lt;/code&gt; e &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;PackageName&lt;/code&gt; (verifique &lt;a href=&quot;https://github.com/bruno-brant/dotnet-java-dependency-analyser/blob/c5f7f6ce78382ac47e8ab0d03ca43851425d1545/src/TinyJavaParser/JavaGram.cs&quot;&gt;aqui&lt;/a&gt;).&lt;/p&gt;
@@ -49,7 +49,11 @@
    <updated>2021-02-13T10:00:00+00:00</updated>
    <id>https://blog.brunobrant.net/parsing-code-with-sprache</id>
    <content type="html">
-     &lt;p&gt;Você provavelmente sabe que às vezes (&lt;em&gt;muitas&lt;/em&gt; vezes), o trabalho de um desenvolvedor é muito mais pesquisa ou análise do que programação! No passado, houve muitos casos em que eu estava em um projeto em que meu objetivo era migrar ou reescrever software antigo e, durante esses compromissos, acabei criando ferramentas para me ajudar. Muitas dessas ferramentas eram analisadores de código especializados que realizavam automaticamente a análise que eu exigia ou até mesmo geravam códigos mais novos que eu poderia utilizar.&lt;/p&gt;
+     &lt;blockquote&gt;
+  &lt;p&gt;😎 Este é o primeiro artigo de uma série de múltiplas partes sobre &lt;strong&gt;como analisar código com Sprache&lt;/strong&gt;. Você pode ler a segunda parte &lt;a href=&quot;2021-02-13-parsing-code-with-sprache-part-2&quot;&gt;aqui&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Você provavelmente sabe que às vezes (&lt;em&gt;muitas&lt;/em&gt; vezes), o trabalho de um desenvolvedor é muito mais pesquisa ou análise do que programação! No passado, houve muitos casos em que eu estava em um projeto em que meu objetivo era migrar ou reescrever software antigo e, durante esses compromissos, acabei criando ferramentas para me ajudar. Muitas dessas ferramentas eram analisadores de código especializados que realizavam automaticamente a análise que eu exigia ou até mesmo geravam códigos mais novos que eu poderia utilizar.&lt;/p&gt;
 
 &lt;p&gt;Em todos esses casos, precisei analisar algum código estruturado e há uma maneira simples de fazer isso: usando &lt;a href=&quot;https://github.com/sprache/Sprache&quot;&gt;Sprache&lt;/a&gt;, um framework de parsing para dotnet. Neste artigo, vamos ver como fazer isso.&lt;/p&gt;
 

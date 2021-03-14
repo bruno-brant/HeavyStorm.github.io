@@ -4,7 +4,7 @@
  <title>TECHNOLOGY MATTERS</title>
  <link href="https://blog.brunobrant.net/feed.xml" rel="self"/>
  <link href="https://blog.brunobrant.net/"/>
- <updated>2021-03-14T23:52:21+00:00</updated>
+ <updated>2021-03-14T23:57:22+00:00</updated>
  <id>https://blog.brunobrant.net/</id>
  <author>
    <name>Bruno Brant</name>
@@ -19,7 +19,7 @@
    <id>https://blog.brunobrant.net/parsing-code-with-sprache-part-2</id>
    <content type="html">
      &lt;blockquote&gt;
-  &lt;p&gt;😎 This the second article of a multiple part series on _how to parse code with Sprache. You can read the first part &lt;a href=&quot;2021-02-13-parsing-code-with-sprache&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+  &lt;p&gt;😎 This the second article of a multiple part series on how to parse code with Sprache. You can read the first part &lt;a href=&quot;2021-02-13-parsing-code-with-sprache&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;In the previous post, we saw how to parse some text (in particular, Java code) using &lt;a href=&quot;https://github.com/sprache/Sprache&quot;&gt;Sprache&lt;/a&gt;, a might library for C#. We saw how to use an incremental approach, and how to use unit tests to drive the development with this tool. So far we wrote a parser for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Identifier&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;PackageName&lt;/code&gt; (check it &lt;a href=&quot;https://github.com/bruno-brant/dotnet-java-dependency-analyser/blob/c5f7f6ce78382ac47e8ab0d03ca43851425d1545/src/TinyJavaParser/JavaGrammar.cs&quot;&gt;here&lt;/a&gt;).&lt;/p&gt;
@@ -50,7 +50,7 @@
    <id>https://blog.brunobrant.net/parsing-code-with-sprache</id>
    <content type="html">
      &lt;blockquote&gt;
-  &lt;p&gt;😎 This the second article of a multiple part series on _how to parse code with Sprache. You can read the second part &lt;a href=&quot;2021-03-13-parsing-code-with-sprache-part-2&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+  &lt;p&gt;😎 This the first article of a multiple part series on how to parse code with Sprache. You can read the second part &lt;a href=&quot;2021-03-13-parsing-code-with-sprache-part-2&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;You probably know that sometimes (&lt;em&gt;many&lt;/em&gt; times), a developer’s job is much more research or analysis than programming! In the past, there have been many instances where I was on a project where my goal was to migrate or rewrite old software, and during those engagements, I ended up creating tools to help me. Many of those tools were specialized code parsers that would automatically perform the analysis I required or even spit out newer code that I could reuse.&lt;/p&gt;
